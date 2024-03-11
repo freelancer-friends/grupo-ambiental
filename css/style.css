@@ -228,6 +228,16 @@ ul {
   color: white;
 }
 
+.contato {
+  padding: 20px;
+}
+
+.contato-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .contato-imagem {
   background-color: #005a3b;
   width: 300px;
