@@ -125,11 +125,11 @@ ul {
   margin-top: 20px;
 }
 
-.main-bg {
+.quem-somos-bg {
   padding: 20px;
 }
 
-.main-bg h2{
+.quem-somos-bg h2{
   margin: 0 auto;
   text-align: center;
 }
@@ -144,38 +144,38 @@ ul {
   margin-top: 20px;
 }
 
-.main-content {
-  display: grid;
-  grid-template-columns: 500px 500px;
+.quem-somos-content {
+  display: flex;
   padding: 20px;
-  justify-content: center;
-  align-items: center;
-  /* display: flex;
+  width: 900px;
+  margin: auto;
   flex-wrap: wrap;
-  justify-content: center;
-  padding: 20px; */
 }
 
-.img-somos {
-  background-color: green;
-  width: 250px;
-  height: 250px;
-  /* display: block; */
+.quem-somos-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.quem-somos-content img {
+  width: 400px;
+  height: 400px;
 }
 
 .sintese {
   display: flex;
 }
 
-.main-servicos {
+.quem-somos-servicos {
   text-align: left;
 }
 
-.main-servicos li + li {
+.quem-somos-servicos li + li {
   margin-top: 20px;
 }
 
-.main-servicos p {
+.quem-somos-servicos p {
   margin-left: 20px;
 }
 
