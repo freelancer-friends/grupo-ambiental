@@ -179,27 +179,29 @@ ul {
   margin-left: 20px;
 }
 
-.clientes {
-  padding: 20px;
+.servicos {
+  background: #90ee90;
+  text-align: center;
 }
 
-.clientes-content {
+.servicos-content {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  gap: 20px;
+  padding: 60px;
 }
 
-.clientes-texto {
-}
-
-.contato {
-  padding: 20px;
-}
-
-.contato-content {
+.serv-item {
+  /* background: goldenrod; */
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.serv-item a {
+  background: #005a3b;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 20px;
 }
 
 .contato-imagem {
