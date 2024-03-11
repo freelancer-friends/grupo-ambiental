@@ -61,6 +61,7 @@ ul {
 .header li a {
   padding: 10px 20px;
   color: #005a3b;
+  font-weight: bold;
 }
 
 .header li a:hover {
@@ -97,21 +98,15 @@ ul {
   width: 400px;
   height: 100%;
   margin: auto 0;
-  background: #005a3b;
+  background: linear-gradient(to right, rgba(0, 90, 59, 1), rgba(0, 255, 0, 0));
   color: white;
-  border-radius: 5px;
   padding: 40px;
   text-align: left;
-  opacity: .9;
 }
 
 .banner-content h1 {
   font-size: 40px;
   letter-spacing: 1.5px;
-}
-
-.banner-content span {
-  color: red;
 }
 
 .banner-bg a {
@@ -123,6 +118,7 @@ ul {
   font-weight: 600;
   font-size: 16px;
   margin-top: 20px;
+  text-align: center;
 }
 
 .quem-somos-bg {
@@ -195,6 +191,10 @@ ul {
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+
+.serv-item i {
+  font-size: 3rem;
 }
 
 .serv-item a {
