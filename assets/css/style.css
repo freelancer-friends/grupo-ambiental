@@ -6,7 +6,7 @@
 
 body {
   font-family: Helvetica, sans-serif;
-  background-color: #fff;
+  background-color: #f7f7f7;
 }
 
 a {
@@ -30,7 +30,6 @@ p {
 .titulo {
   font-size: 2.5rem;
   margin-bottom: 2rem;
-  /* text-align: center; */
 }
 
 .subtitulo {
@@ -153,14 +152,16 @@ p {
 }
 
 .sobre {
-  /* background-color: green; */
-  /* padding: 20px; */
-  padding: 2rem 0;
+  padding: 4rem 0;
 }
 
 .sobre-container {
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.sobre-container .titulo {
+  color: #365244;
 }
 
 .subt::after {
@@ -192,6 +193,7 @@ p {
 .servicos {
   background: #365244;
   text-align: center;
+  padding: 4rem 0;
 }
 
 .servicos-container {
@@ -199,11 +201,16 @@ p {
   margin: 0 auto;
 }
 
+.servicos-container .titulo {
+  color: #1df288;
+  margin-bottom: 4rem;
+}
+
 .servicos-content {
   display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
   justify-content: center;
-  padding-bottom: 2rem;
   align-items: center;
 }
 
@@ -249,7 +256,7 @@ p {
 .clientes-container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 2rem 0;
+  padding: 4rem 0;
 }
 
 .clientes ul{
@@ -268,7 +275,7 @@ p {
 .contato-container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 2rem 0;
+  padding: 4rem 0;
 }
 
 .contato-titulo {
@@ -302,12 +309,12 @@ p {
 
 .footer {
   background-color: #222222;
-  color: white;
 }
 
 .footer-container {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 2rem 0;
 }
 
 .footer-content {
@@ -328,7 +335,7 @@ p {
 
 .contato-item a {
   margin-top: 1rem;
-  color: white;
+  color: #e5e5e5;
   font-size: 1.2rem;
   font-weight: bold;
 }
