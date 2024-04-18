@@ -15,7 +15,7 @@ a {
 }
 
 img {
-  max-width: 100%;
+  max-height: 100%;
   display: block;
 }
 
@@ -49,7 +49,7 @@ p {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding: 1.5rem;
+  padding: 1.5rem 0;
 }
 
 .logo {
@@ -64,7 +64,7 @@ p {
   flex-wrap: wrap;
   justify-content: center;
   list-style: none;
-  gap: 10px;
+  gap: 1rem;
 }
 
 .header li a {
@@ -89,6 +89,33 @@ p {
   margin: 0 auto;
 }
 
+.servicos-container-item {
+  margin-top: 5rem;
+}
+
+.empresa {
+  /* background-color: red; */
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  margin-bottom: 2rem;
+  
+}
+
+.empresa-nome {
+  color: #365244;
+  font-size: 3rem;
+}
+
+.empresa a {
+  color: #365244;
+  background-color: #1df288;
+  display: inline-block;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
 .servicos-container .titulo {
   color: #365244;
   margin-bottom: 4rem;
@@ -97,9 +124,7 @@ p {
 .servicos-content {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
-  justify-content: center;
-  align-items: center;
+  row-gap: 2rem;
 }
 
 .servico-foto {
@@ -114,8 +139,18 @@ p {
   display: flex;
   flex-direction: column;
   width: 400px;
-  gap: 20px;
+  gap: 1.5rem;
   color: #1df288;
+}
+
+.serv-item figure {
+  border: 2px solid #000;
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 0 auto;
 }
 
 .serv-item p {

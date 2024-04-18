@@ -67,7 +67,7 @@ p {
   flex-wrap: wrap;
   justify-content: center;
   list-style: none;
-  gap: 10px;
+  gap: 1rem;
 }
 
 .header li a {
