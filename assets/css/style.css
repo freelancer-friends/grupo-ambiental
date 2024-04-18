@@ -38,13 +38,8 @@ p {
   line-height: 1.5;
 }
 
-.header-bg {
-  background-color: #000;
-}
-
 .header {
-  width: 100%;
-  /* background-color: green; */
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .header-nav {

@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+  background-color: #f7f7f7;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+.titulo {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.subtitulo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.header {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.header-nav {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+}
+
+.logo {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  letter-spacing: 2px;
+  color: #005a3b;
+  text-align: center;
+}
+
+.header ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  gap: 10px;
+}
+
+.header li a {
+  padding: 10px 20px;
+  color: #005a3b;
+  font-weight: bold;
+}
+
+.header li a:hover {
+  color: chocolate;
+  /* background-color: rgba(255, 255, 255, 0.2); */
+}
+
+.servicos {
+  background: #f7f7f7;
+  text-align: center;
+  padding: 4rem 0;
+}
+
+.servicos-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.servicos-container .titulo {
+  color: #365244;
+  margin-bottom: 4rem;
+}
+
+.servicos-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.servico-foto {
+  border: 2px solid black;
+  width: 200px;
+  height: 150px;
+  margin: 0 auto;
+  border-radius: 20px;
+}
+
+.serv-item {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  gap: 20px;
+  color: #1df288;
+}
+
+.serv-item p {
+  color: #365244;
+  font-weight: bold;
+}
+
+
+
+.serv-item a:hover {
+  background: chocolate;
+}
+
+.footer {
+  background-color: #222222;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.footer-content {
+  text-align: center;
+}
+
+.footer-contato {
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+  padding: 3rem 0;
+}
+
+.contato-item i {
+  font-size: 2rem;
+  color: #16845D;
+}
+
+.contato-item a {
+  margin-top: 1rem;
+  color: #e5e5e5;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.footer-copy-bg {
+  background-color: #111111;
+}
+
+.footer-copy {
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 2rem 0;
+  color: #d1d1d1;
+  max-width: 1200px;
+  margin: 0 auto;
+}
