@@ -176,7 +176,8 @@ p {
   display: grid;
   grid-template-columns: 1fr 1fr;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 4rem;
+  align-items: center;
 }
 
 .sobre-item p {
@@ -279,30 +280,23 @@ p {
 .contato-content {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
+  gap: 2rem;
+  align-items: center;
 }
 
-.contato-imagem {
-  background-color: #005a3b;
-  width: 300px;
-  height: 400px;
+.contato-content a {
+  padding: 1rem 2rem;
+  background-color: #1df288;
+  border-radius: 10px;
+  color: #365244;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: 0.3s;
 }
 
-.contato ul {
-  margin-right: 20px;
-  text-align: right;
-}
-
-.contato li {
-  margin-bottom: 10px;
-}
-
-.contato li::after {
-  content: '';
-  display: inline-block;
-  width: 20px;
-  height: 10px;
-  margin-left: 5px;
+.contato-content a:hover {
   background-color: chocolate;
 }
 
@@ -317,22 +311,26 @@ p {
 }
 
 .footer-content {
+  text-align: center;
+}
+
+.footer-contato {
   display: flex;
-  flex-wrap: wrap;
+  gap: 3rem;
   justify-content: center;
-  padding: 20px;
+  padding: 3rem 0;
 }
 
-.footer-contato li {
-  padding: 10px 0;
+.contato-item i {
+  font-size: 2rem;
+  color: #16845D;
 }
 
-.footer-contato a {
+.contato-item a {
+  margin-top: 1rem;
   color: white;
-}
-
-.footer-endereco p {
-  padding: 10px 0;
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 
 .footer-copy-bg {
@@ -342,8 +340,8 @@ p {
 .footer-copy {
   text-align: center;
   font-size: 1.2rem;
-  padding: 2rem;
-  color: white;
+  padding: 2rem 0;
+  color: #d1d1d1;
   max-width: 1200px;
   margin: 0 auto;
 }
