@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Helvetica, sans-serif;
   background-color: #fff;
 }
 
@@ -97,8 +97,10 @@ p {
 
 .banner-bg::before {
   content: '';
-  background-image: url('../img/foto00.jpg');
-  background-size: cover;
+  background-image: url('../img/info/foto12.jpg');
+  /* background-size: contain; */
+  background-size: 100%;
+  background-repeat: no-repeat;
   background-position: center;
   position: absolute;
   top: 0;
@@ -128,8 +130,9 @@ p {
 }
 
 .banner-content h1 {
-  font-size: 40px;
+  font-size: 2.5rem;
   letter-spacing: 1.5px;
+  font-weight: bold;
 }
 
 .banner-content a {
