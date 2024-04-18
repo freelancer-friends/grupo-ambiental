@@ -189,7 +189,7 @@ p {
 }
 
 .servicos {
-  background: #3AAE86;
+  background: #365244;
   text-align: center;
 }
 
@@ -200,9 +200,18 @@ p {
 
 .servicos-content {
   display: flex;
-  gap: 1.5rem;
+  gap: 1rem;
   justify-content: center;
   padding-bottom: 2rem;
+  align-items: center;
+}
+
+.servico-foto {
+  border: 2px solid black;
+  width: 200px;
+  height: 150px;
+  margin: 0 auto;
+  border-radius: 20px;
 }
 
 .serv-item {
@@ -210,6 +219,7 @@ p {
   flex-direction: column;
   width: 400px;
   gap: 20px;
+  color: #1df288;
 }
 
 .serv-item i {
@@ -217,8 +227,8 @@ p {
 }
 
 .serv-item a {
-  background: #005a3b;
-  color: white;
+  background: #1df288;
+  color: #365244;
   font-weight: bold;
   padding: 1rem 2rem;
   border-radius: 20px;
