@@ -23,24 +23,42 @@ ul {
   list-style: none;
 }
 
+p {
+  font-size: 1.5rem;
+}
+
 .titulo {
-  font-size: 3rem;
-  line-height: 2;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
 }
 
 .subtitulo {
-  font-size: 18px;
+  font-size: 1.5rem;
   font-weight: 700;
   line-height: 1.5;
 }
 
+.header-bg {
+  background-color: #000;
+}
+
 .header {
-  background-color: white;
+  width: 100%;
+  /* background-color: green; */
+}
+
+.header-nav {
+  /* background-color: white; */
+  max-width: 1200px;
+  margin: 0 auto;
+
   display: flex;
   flex-wrap: wrap;
+  /* justify-content: center; */
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding: 1.5rem;
 }
 
 .logo {
@@ -73,13 +91,13 @@ ul {
   display: flex;
   flex-wrap: wrap;
   text-align: center;
-  height: 500px;
+  height: 600px;
   position: relative;
 }
 
 .banner-bg::before {
   content: '';
-  background-image: url('../img/foto01.jpg');
+  background-image: url('../img/foto00.jpg');
   background-size: cover;
   background-position: center;
   position: absolute;
@@ -87,19 +105,26 @@ ul {
   left: 0;
   bottom: 0;
   right: 0;
-  opacity: 0.9;
+  opacity: 1;
+}
+
+.banner-container {
+  position: relative;
+  width: 1200px;
+  margin: 0 auto;
+  text-align: left;
+  /* background: linear-gradient(to right, rgba(0, 90, 59, 1), rgba(0, 255, 0, 0)); */
 }
 
 .banner-content {
-  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  text-align: left;
-  background: linear-gradient(to right, rgba(0, 90, 59, 1), rgba(0, 255, 0, 0));
   color: white;
-  width: 450px;
-  padding: 40px;
+  /* width: 450px; */
+  padding: 1.5rem;
+  height: 100%;
+  text-align: center;
 }
 
 .banner-content h1 {
@@ -107,30 +132,32 @@ ul {
   letter-spacing: 1.5px;
 }
 
-.banner-bg a {
-  display: inline-block;
+.banner-content a {
   background-color: #0974c0;
   color: white;
-  padding: 16px 36px;
+  padding: 1rem 2rem;
   border-radius: 50px;
   font-weight: 600;
   font-size: 16px;
   margin-top: 20px;
   text-align: center;
   transition: .3s;
+  align-self: center;
 }
 
 .banner-bg a:hover {
   background-color: chocolate;
 }
 
-.quem-somos-bg {
-  padding: 20px;
+.sobre {
+  /* background-color: green; */
+  /* padding: 20px; */
+  padding: 2rem 0;
 }
 
-.quem-somos-bg h2{
+.sobre-container {
+  max-width: 1200px;
   margin: 0 auto;
-  text-align: center;
 }
 
 .subt::after {
@@ -142,38 +169,22 @@ ul {
   margin: 30px auto;
 }
 
-.quem-somos-content {
+.sobre-content {
   display: flex;
   width: 900px;
   margin: auto;
   flex-wrap: wrap;
 }
 
-.quem-somos-item {
+.sobre-item {
   display: flex;
   align-items: center;
   gap: 20px;
 }
 
-.quem-somos-content img {
+.sobre-content img {
   width: 400px;
   height: 400px;
-}
-
-.sintese {
-  display: flex;
-}
-
-.quem-somos-servicos {
-  text-align: left;
-}
-
-.quem-somos-servicos li + li {
-  margin-top: 20px;
-}
-
-.quem-somos-servicos p {
-  margin-left: 20px;
 }
 
 .servicos {
@@ -181,11 +192,16 @@ ul {
   text-align: center;
 }
 
+.servicos-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 .servicos-content {
   display: flex;
-  gap: 20px;
-  padding: 60px;
+  gap: 1.5rem;
   justify-content: center;
+  padding-bottom: 2rem;
 }
 
 .serv-item {
@@ -216,11 +232,12 @@ ul {
   text-align: center;
   background: #16845D;
   color: white;
-  padding: 40px;
 }
 
-.clientes h1 {
-  padding-bottom: 30px;
+.clientes-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 0;
 }
 
 .clientes ul{
@@ -236,8 +253,16 @@ ul {
   color: white;
 }
 
-.contato {
-  padding: 20px;
+.contato-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.contato-titulo {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
 }
 
 .contato-content {
@@ -275,6 +300,11 @@ ul {
   color: white;
 }
 
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 .footer-content {
   display: flex;
   flex-wrap: wrap;
@@ -294,9 +324,15 @@ ul {
   padding: 10px 0;
 }
 
+.footer-copy-bg {
+  background-color: #111111;
+}
+
 .footer-copy {
   text-align: center;
-  padding: 20px;
+  font-size: 1.2rem;
+  padding: 2rem;
   color: white;
-  background-color: #111111;
+  max-width: 1200px;
+  margin: 0 auto;
 }
