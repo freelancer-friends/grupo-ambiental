@@ -124,7 +124,7 @@ nav li a.ativo {
 .servicos-content {
   display: flex;
   flex-wrap: wrap;
-  row-gap: 2rem;
+  margin: 5rem 0;
 }
 
 .servico-foto {
