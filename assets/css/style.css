@@ -73,24 +73,24 @@ p {
 }
 
 .nav li a:hover {
-  color: chocolate;
+  color: rgb(221, 213, 206);
 }
 
 nav li a.ativo {
-  color: chocolate;
+  color: #87c931;
 }
 
 .banner-bg {
   display: flex;
   flex-wrap: wrap;
   text-align: center;
-  height: 600px;
   position: relative;
+  margin-top: -1px; /* Corrigindo o espaço abaixo da navegação */
 }
 
 .banner-bg::before {
   content: '';
-  background-image: url('../img/info/foto12.jpg');
+  background-image: url('../img/info/foto23.png');
   /* background-size: contain; */
   background-size: 100%;
   background-repeat: no-repeat;
@@ -106,6 +106,7 @@ nav li a.ativo {
 .banner-container {
   position: relative;
   width: 1200px;
+  height: 370px;
   margin: 0 auto;
   text-align: left;
   /* background: linear-gradient(to right, rgba(0, 90, 59, 1), rgba(0, 255, 0, 0)); */
@@ -129,20 +130,21 @@ nav li a.ativo {
 }
 
 .banner-content a {
-  background-color: #0974c0;
-  color: white;
+  background-color: #87c931;
+  color: #092517;
   padding: 1rem 2rem;
   border-radius: 50px;
   font-weight: 600;
   font-size: 16px;
-  margin-top: 20px;
+  margin-top: 180px;
+  margin-left: 235px;
   text-align: center;
   transition: .3s;
-  align-self: center;
+  align-self: flex-start;
 }
 
 .banner-bg a:hover {
-  background-color: chocolate;
+  background-color: rgb(233, 225, 220);
 }
 
 .sobre {
@@ -150,12 +152,13 @@ nav li a.ativo {
 }
 
 .sobre-container {
-  max-width: 1200px;
+  max-width: 1100px;
+  padding: 40px;
   margin: 0 auto;
 }
 
 .sobre-container .titulo {
-  color: #365244;
+  color: #092517;
 }
 
 .subt::after {
@@ -185,7 +188,7 @@ nav li a.ativo {
 }
 
 .servicos {
-  background: #365244;
+  background: #092517;
   text-align: center;
   padding: 4rem 0;
 }
@@ -196,14 +199,15 @@ nav li a.ativo {
 }
 
 .servicos-container .titulo {
-  color: #1df288;
+  color: #85c731;
   margin-bottom: 4rem;
 }
 
 .servicos-content {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 2rem;
+  padding: 25px;
   justify-content: center;
   align-items: center;
 }
@@ -211,14 +215,14 @@ nav li a.ativo {
 .serv-item {
   display: flex;
   flex-direction: column;
-  width: 400px;
-  color: #1df288;
+  width: 250px;
+  color: #85c731;
 }
 
 .serv-item figure {
-  border: 2px solid #000;
-  width: 200px;
-  height: 150px;
+  border: none;
+  width: 255px;
+  height: 168px;
   object-fit: cover;
   border-radius: 20px;
   overflow: hidden;
@@ -230,8 +234,8 @@ nav li a.ativo {
 }
 
 .serv-item a {
-  background: #1df288;
-  color: #365244;
+  background: #85c731;
+  color: #092517;
   font-weight: bold;
   padding: 1rem 2rem;
   border-radius: 20px;
@@ -244,7 +248,7 @@ nav li a.ativo {
 
 .clientes {
   text-align: center;
-  background: #16845D;
+  background: #80c51f;
   color: white;
 }
 
@@ -277,6 +281,7 @@ nav li a.ativo {
   text-align: center;
   margin-bottom: 2rem;
   font-size: 2.5rem;
+  color: #092517;
 }
 
 .contato-content {
@@ -290,9 +295,9 @@ nav li a.ativo {
 
 .contato-content a {
   padding: 1rem 2rem;
-  background-color: #1df288;
+  background-color: #85c731;
   border-radius: 10px;
-  color: #365244;
+  color: #092517;
   text-transform: uppercase;
   font-weight: bold;
   transition: 0.3s;
@@ -325,7 +330,7 @@ nav li a.ativo {
 
 .contato-item i {
   font-size: 2rem;
-  color: #16845D;
+  color: #80c51f;
 }
 
 .contato-item a {

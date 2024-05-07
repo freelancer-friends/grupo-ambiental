@@ -70,11 +70,11 @@ p {
 }
 
 .nav li a:hover {
-  color: chocolate;
+  color: #87c931;
 }
 
 nav li a.ativo {
-  color: chocolate;
+  color: #87c931;
 }
 
 .servicos {
@@ -103,13 +103,13 @@ nav li a.ativo {
 }
 
 .empresa-nome {
-  color: #365244;
+  color: #092517;
   font-size: 3rem;
 }
 
 .empresa a {
-  color: #365244;
-  background-color: #1df288;
+  color: #092517;
+  background-color: #87c931;
   display: inline-block;
   padding: 1rem 2rem;
   border-radius: 10px;
@@ -117,7 +117,7 @@ nav li a.ativo {
 }
 
 .servicos-container .titulo {
-  color: #365244;
+  color: #092517;
   margin-bottom: 4rem;
 }
 
@@ -140,13 +140,13 @@ nav li a.ativo {
   flex-direction: column;
   width: 400px;
   gap: 1.5rem;
-  color: #1df288;
+  color: #87c931;
 }
 
 .serv-item figure {
-  border: 2px solid #000;
-  width: 200px;
-  height: 150px;
+  border: none;
+  width: 255px;
+  height: 168px;
   object-fit: cover;
   border-radius: 20px;
   overflow: hidden;
@@ -154,13 +154,13 @@ nav li a.ativo {
 }
 
 .serv-item p {
-  color: #365244;
+  color: #092517;
   font-weight: bold;
   text-align: center;
 }
 
 .serv-item a:hover {
-  background: chocolate;
+  background: #87c931;
 }
 
 .footer {
@@ -186,7 +186,7 @@ nav li a.ativo {
 
 .contato-item i {
   font-size: 2rem;
-  color: #16845D;
+  color: #87c931;
 }
 
 .contato-item a {
