@@ -252,6 +252,23 @@ nav li a.ativo {
   background: chocolate;
 }
 
+.btn-all-servicos {
+  padding: 1rem 2rem;
+  text-align: center;
+  width: 20%;
+  justify-content: center;
+  margin: 3rem auto;
+  background-color: #80c51f;
+  border-radius: 20px;
+  color: #092517;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn-all-servicos:hover {
+  background: chocolate;
+}
+
 .clientes {
   text-align: center;
   background: #80c51f;
