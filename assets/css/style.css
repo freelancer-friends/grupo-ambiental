@@ -45,15 +45,13 @@ p {
 }
 
 .header-nav {
-  /* background-color: white; */
   max-width: 1200px;
   margin: 0 auto;
-
   display: flex;
   flex-wrap: wrap;
-  /* justify-content: center; */
   justify-content: space-between;
   align-items: center;
+  padding: 0 1rem;
 }
 
 .logo {
@@ -409,9 +407,6 @@ nav li a.ativo {
   .clientes ul {
     justify-content: flex-start;
   }
-  #btn-mobile {
-    display: block;
-  }
   #menu {
     display: block;
     position: absolute;
@@ -434,5 +429,31 @@ nav li a.ativo {
     padding: 1rem 0;
     margin: 0 1rem;
     border-bottom: 2px solid rgba(0, 0, 0, 0.08);
+  }
+  #btn-mobile {
+    display: flex;
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: .5rem;
+  }
+  #hamburguer {
+    border-top: 2px solid;
+    width: 20px;
+    transition: .3s;
+  }
+  #hamburguer::after, #hamburguer::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: currentColor;
+    margin-top: 5px;
+    
+  }
+  #nav.active #hamburguer {
+    transform: rotate(90deg);
   }
 }
