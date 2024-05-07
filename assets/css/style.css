@@ -217,6 +217,11 @@ nav li a.ativo {
   flex-direction: column;
   width: 250px;
   color: #85c731;
+  transition: 0.3s;
+}
+
+.serv-item:hover {
+  transform: scale(1.2);
 }
 
 .serv-item figure {
@@ -227,6 +232,7 @@ nav li a.ativo {
   border-radius: 20px;
   overflow: hidden;
   margin: 0 auto;
+  margin-bottom: 1rem;
 }
 
 .serv-item p {
