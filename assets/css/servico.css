@@ -125,6 +125,7 @@ nav li a.ativo {
   display: flex;
   flex-wrap: wrap;
   margin: 5rem 0;
+  row-gap: 1rem;
 }
 
 .servico-foto {
@@ -136,11 +137,12 @@ nav li a.ativo {
 }
 
 .serv-item {
-  display: flex;
-  flex-direction: column;
   width: 400px;
-  gap: 1.5rem;
-  color: #87c931;
+  cursor: pointer;
+}
+
+.serv-item:hover {
+  
 }
 
 .serv-item figure {
