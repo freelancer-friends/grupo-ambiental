@@ -124,8 +124,8 @@ nav li a.ativo {
   display: flex;
   flex-wrap: wrap;
   margin: 5rem 0;
-  row-gap: 3rem;
-  justify-content: center;
+  /* row-gap: 3rem; */
+  gap: 3rem;
 }
 
 .servico-foto {
@@ -137,7 +137,7 @@ nav li a.ativo {
 }
 
 .serv-item {
-  width: 350px;
+  width: 255px;
   cursor: pointer;
   transition: 0.3s;
 }
