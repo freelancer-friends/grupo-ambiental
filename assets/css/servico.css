@@ -168,6 +168,17 @@ nav li a.ativo {
   background: #87c931;
 }
 
+.serv-item2 {
+  width: 255px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.serv-item2:hover {
+  transform: scale(1.1);
+}
+
+
 .footer {
   background-color: #222222;
 }
@@ -264,4 +275,9 @@ nav li a.ativo {
 
 .folhagrupoa{
   max-width: 100%;
+}
+
+.li {
+  width: 80%;
+  line-height: 3;
 }
