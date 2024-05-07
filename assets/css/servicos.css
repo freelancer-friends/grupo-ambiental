@@ -31,7 +31,10 @@ p {
 
 .titulo {
   font-size: 2.5rem;
-  margin-bottom: 2rem;
+  margin: 0 auto;
+  justify-content: center;
+  text-align: center;
+  margin-top: 40px;
 }
 
 .subtitulo {
@@ -40,9 +43,6 @@ p {
   line-height: 1.5;
 }
 
-.header {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-}
 
 .header-nav {
   max-width: 1200px;
@@ -93,6 +93,9 @@ nav li a.ativo {
 .servicos-container-item {
   margin-top: 5rem;
   margin-bottom: 5rem;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
 }
 
 .empresa {
@@ -128,6 +131,7 @@ nav li a.ativo {
 }
 
 .footer-container {
+  margin-top: 100px;
   max-width: 1200px;
   margin: 0 auto;
   padding: 2rem 0;
@@ -173,6 +177,7 @@ nav li a.ativo {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  padding-bottom: 65px;
   /* width: 70%; */
 }
 
@@ -189,6 +194,162 @@ nav li a.ativo {
 }
 
 
+.depoimentos {
+  position: relative;
+  overflow: hidden;
+  max-width: 90%; /* Limita a largura do carrossel a 70% da largura da janela */
+  margin: 0 auto; /* Centraliza o carrossel na página */
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease;
+  width: fit-content; /* Ajusta a largura do carrossel ao conteúdo */
+  margin: 0 auto; /* Centraliza o carrossel na página */
+  margin-bottom: 100px;
+}
+
+.depoimento {
+  background-color: #87c931;
+  color: #092517;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin: 20px;
+  padding: 30px;
+  max-width: 400px;
+  width: 100%;
+  flex: 0 0 auto;
+  transition: transform 0.3s ease;
+}
+
+.depoimento img {
+  width: 100px;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.mensagem {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.autor {
+  font-style: italic;
+  font-size: 16px;
+  text-align: right;
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  color: #092517;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+.depoimento:hover {
+  transform: scale(1.05);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #85c731;
+  padding: 20px;
+  margin-right: 10px;
+  border-radius: 10px;
+  width: 400px;
+}
+
+.card:last-child {
+  background-color: #092517;
+  margin-right: 0;
+}
+
+h2 {
+  margin: 0;
+  color: #fff;
+  text-align: center;
+}
+
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.serv-item {
+  margin: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.serv-item:hover {
+  transform: scale(1.1);
+}
+
+.serv-item img {
+  width: 150px;
+  border-radius: 10px;
+}
+
+.btn1 {
+  margin-top: 20px;
+  font-size: 16px;
+  padding: 10px 20px;
+  background-color: #092517;
+  color: #85c731;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn1:hover {
+  background: #e5e5e5;
+  color:#111111
+}
+
+
+.btn2 {
+  margin-top: 20px;
+  font-size: 16px;
+  padding: 10px 20px;
+  background-color: #85c731;
+  color: #092517;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn2:hover {
+  background: #e5e5e5;
+  color:#111111
+}
+
+.btn:hover {
+  background-color: #f2f2f2;
+}
+
+.miniaturaserviço{
+  cursor: pointer;
+}
 
 
 
@@ -198,15 +359,18 @@ nav li a.ativo {
 
 
 
-
-.banner-container {
+/* .banner-container {
   position: relative;
   overflow: hidden;
   width: 100%;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
 }
 
 .banner {
   display: none;
+  position: relative;
 }
 
 .banner.active {
@@ -230,5 +394,4 @@ button {
 
 #nextBtn {
   right: 0;
-}
-
+} */
