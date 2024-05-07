@@ -1,3 +1,7 @@
+import initMenuMobile from "./modules/menu-mobile.js";
+
+initMenuMobile();
+
 document.addEventListener('DOMContentLoaded', function () {
     const banners = document.querySelectorAll('.banner');
     let currentBannerIndex = 0;
