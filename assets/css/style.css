@@ -281,11 +281,20 @@ nav li a.ativo {
   padding: 4rem 0;
 }
 
-.clientes ul{
+.clientes-lista {
+  padding: 2rem;
+}
+
+.clientes-item {
+  min-width: 124px;
+}
+
+.clientes ul {
   display: flex;
-  gap: 20px;
+  flex-wrap: nowrap;
+  gap: 1rem;
   justify-content: center;
-  overflow-x: auto;
+  
 }
 
 .cliente-item {
@@ -387,5 +396,11 @@ nav li a.ativo {
   }
   .sobre-content {
     grid-template-columns: 1fr;
+  }
+  .clientes-lista {
+    overflow-x: auto;
+  }
+  .clientes ul {
+    justify-content: flex-start;
   }
 }
