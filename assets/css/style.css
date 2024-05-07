@@ -135,7 +135,7 @@ nav li a.ativo {
   background-color: #87c931;
   color: #092517;
   padding: 1rem 2rem;
-  border-radius: 50px;
+  border-radius: 20px;
   font-weight: 600;
   /* font-size: 16px; */
   margin-top: 180px;
@@ -144,6 +144,7 @@ nav li a.ativo {
   transition: .3s;
   align-self: flex-start;
 }
+
 
 .banner-bg a:hover {
   background-color: rgb(233, 225, 220);
@@ -328,7 +329,7 @@ nav li a.ativo {
 .contato-content a {
   padding: 1rem 2rem;
   background-color: #85c731;
-  border-radius: 10px;
+  border-radius: 20px;
   color: #092517;
   text-transform: uppercase;
   font-weight: bold;

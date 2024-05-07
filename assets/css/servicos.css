@@ -315,10 +315,16 @@ h2 {
   background-color: #092517;
   color: #85c731;
   border: none;
-  border-radius: 10px;
+  border-radius: 15px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
+
+.btn1:hover {
+  background: #e5e5e5;
+  color:#111111
+}
+
 
 .btn2 {
   margin-top: 20px;
@@ -327,9 +333,14 @@ h2 {
   background-color: #85c731;
   color: #092517;
   border: none;
-  border-radius: 10px;
+  border-radius: 15px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+}
+
+.btn2:hover {
+  background: #e5e5e5;
+  color:#111111
 }
 
 .btn:hover {
