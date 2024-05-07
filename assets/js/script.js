@@ -54,3 +54,15 @@ function updateCarousel() {
 // Adiciona eventos de clique aos botões de navegação
 prevButton.addEventListener('click', prevDepoimento);
 nextButton.addEventListener('click', nextDepoimento);
+
+
+
+// ////
+
+////////////
+
+///////////
+//// //
+
+////// //
+

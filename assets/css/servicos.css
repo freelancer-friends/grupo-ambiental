@@ -31,7 +31,10 @@ p {
 
 .titulo {
   font-size: 2.5rem;
-  margin-bottom: 2rem;
+  margin: 0 auto;
+  justify-content: center;
+  text-align: center;
+  margin-top: 40px;
 }
 
 .subtitulo {
@@ -40,9 +43,6 @@ p {
   line-height: 1.5;
 }
 
-.header {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-}
 
 .header-nav {
   max-width: 1200px;
@@ -93,6 +93,9 @@ nav li a.ativo {
 .servicos-container-item {
   margin-top: 5rem;
   margin-bottom: 5rem;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
 }
 
 .empresa {
@@ -128,6 +131,7 @@ nav li a.ativo {
 }
 
 .footer-container {
+  margin-top: 100px;
   max-width: 1200px;
   margin: 0 auto;
   padding: 2rem 0;
@@ -173,6 +177,7 @@ nav li a.ativo {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  padding-bottom: 65px;
   /* width: 70%; */
 }
 
@@ -201,6 +206,7 @@ nav li a.ativo {
   transition: transform 0.5s ease;
   width: fit-content; /* Ajusta a largura do carrossel ao conteúdo */
   margin: 0 auto; /* Centraliza o carrossel na página */
+  margin-bottom: 100px;
 }
 
 .depoimento {
@@ -259,7 +265,80 @@ nav li a.ativo {
   transform: scale(1.05);
 }
 
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #85c731;
+  padding: 20px;
+  margin-right: 10px;
+  border-radius: 10px;
+  width: 400px;
+}
 
+.card:last-child {
+  background-color: #092517;
+  margin-right: 0;
+}
+
+h2 {
+  margin: 0;
+  color: #fff;
+  text-align: center;
+}
+
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.serv-item {
+  margin: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.serv-item:hover {
+  transform: scale(1.1);
+}
+
+.serv-item img {
+  width: 150px;
+  border-radius: 10px;
+}
+
+.btn1 {
+  margin-top: 20px;
+  font-size: 16px;
+  padding: 10px 20px;
+  background-color: #092517;
+  color: #85c731;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn2 {
+  margin-top: 20px;
+  font-size: 16px;
+  padding: 10px 20px;
+  background-color: #85c731;
+  color: #092517;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #f2f2f2;
+}
+
+.miniaturaserviço{
+  cursor: pointer;
+}
 
 
 

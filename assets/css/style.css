@@ -149,6 +149,7 @@ nav li a.ativo {
   background-color: rgb(233, 225, 220);
 }
 
+
 .sobre {
   padding: 4rem 0;
 }
@@ -254,56 +255,52 @@ nav li a.ativo {
   background: chocolate;
 }
 
-.btn-all-servicos {
-  padding: 1rem 2rem;
-  text-align: center;
-  width: 20%;
-  justify-content: center;
-  margin: 3rem auto;
-  background-color: #80c51f;
-  border-radius: 20px;
-  color: #092517;
-  font-weight: bold;
-  transition: 0.3s;
+.outline-btn {
+  background: none; /* Removido o preenchimento */
+  border: 2px solid #80c51f; /* Adicionado contorno */
+  color: #80c51f; /* Cor do texto */
+  padding: 0.5rem 1rem; /* Ajuste de espaçamento interno */
+  cursor: pointer;
+  border-radius: 15px;
+  width: 300px;
+  margin: 0 auto;
+  margin-top: 50px;
 }
 
-.btn-all-servicos:hover {
-  background: chocolate;
+.outline-btn:hover {
+  background: #80c51f; /* Adiciona preenchimento ao passar o mouse */
+  color: white; /* Altera a cor do texto ao passar o mouse */
 }
 
 .clientes {
   text-align: center;
   background: #80c51f;
   color: white;
+  position: relative; /* Adicionado para posicionar as setas */
+  padding: 40px;
 }
 
 .clientes-container {
-  max-width: 1200px;
+  max-width: 90%; /* Reduzindo a largura para 70% */
   margin: 0 auto;
   padding: 4rem 0;
+  position: relative; /* Adicionado para posicionar as setas */
 }
 
-.clientes-lista {
-  padding: 2rem;
-}
-
-.clientes-item {
-  min-width: 124px;
-}
 
 .clientes ul {
   display: flex;
   flex-wrap: nowrap;
   gap: 1rem;
-  justify-content: center;
-  
+  justify-content: flex-start; /* Alterado para alinhar as logos à esquerda */
 }
 
-.cliente-item {
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 2rem;
-  font-weight: bold;
-  color: white;
+.clientes-item{
+  width: 200px; 
+}
+
+.contato {
+  background-image: url("../img/info/bannercontato.png");
 }
 
 .contato-container {
@@ -316,7 +313,7 @@ nav li a.ativo {
   text-align: center;
   margin-bottom: 2rem;
   font-size: 2.5rem;
-  color: #092517;
+  color: #fafafa;
 }
 
 .contato-content {
