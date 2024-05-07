@@ -124,7 +124,6 @@ nav li a.ativo {
   display: flex;
   flex-wrap: wrap;
   margin: 5rem 0;
-  /* row-gap: 3rem; */
   gap: 3rem;
 }
 
