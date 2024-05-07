@@ -171,3 +171,9 @@ nav li a.ativo {
   display: flex;
   flex-wrap: wrap;
 }
+
+.clienteslogo {
+  max-width: 150px; /* Defina o tamanho máximo desejado */
+  height: auto; /* Para manter a proporção da imagem */
+  margin: 10px; /* Adicione margem para separar as logos */
+}
