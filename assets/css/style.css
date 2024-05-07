@@ -86,21 +86,21 @@ nav li a.ativo {
 
 .banner-bg {
   display: flex;
-  flex-wrap: wrap;
-  text-align: center;
+  /* flex-wrap: wrap; */
+  /* text-align: center; */
   position: relative;
-  margin-top: -1px; /* Corrigindo o espaço abaixo da navegação */
+  height: 430px;
 }
 
 .banner-bg::before {
   content: '';
   background-image: url('../img/info/foto23.png');
-  /* background-size: contain; */
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
   position: absolute;
   top: 0;
+  /* width: 100%; */
   left: 0;
   bottom: 0;
   right: 0;
@@ -109,11 +109,10 @@ nav li a.ativo {
 
 .banner-container {
   position: relative;
-  width: 1200px;
-  height: 370px;
+  /* width: 1200px; */
+  /* height: 370px; */
   margin: 0 auto;
   text-align: left;
-  /* background: linear-gradient(to right, rgba(0, 90, 59, 1), rgba(0, 255, 0, 0)); */
 }
 
 .banner-content {
@@ -141,7 +140,7 @@ nav li a.ativo {
   font-weight: 600;
   /* font-size: 16px; */
   margin-top: 180px;
-  margin-left: 235px;
+  /* margin-left: 235px; */
   text-align: center;
   transition: .3s;
   align-self: flex-start;
@@ -392,6 +391,16 @@ nav li a.ativo {
 }
 
 @media (max-width: 900px) {
+  .banner-bg {
+    height: 337px;
+  }
+  .header-nav {
+    flex-wrap: nowrap;
+  }
+  #nav {
+    border: 2px solid;
+    border-radius: 5px;
+  }
   .banner-container {
     height: 268px;
   }
@@ -455,5 +464,11 @@ nav li a.ativo {
   }
   #nav.active #hamburguer {
     transform: rotate(90deg);
+  }
+}
+
+@media (max-width: 400px) {
+  .banner-bg {
+    height: 153;
   }
 }
