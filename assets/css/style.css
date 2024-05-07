@@ -120,7 +120,7 @@ nav li a.ativo {
   justify-content: center;
   color: white;
   /* width: 450px; */
-  padding: 1.5rem;
+  /* padding: 1.5rem; */
   height: 100%;
   text-align: center;
 }
@@ -137,7 +137,7 @@ nav li a.ativo {
   padding: 1rem 2rem;
   border-radius: 50px;
   font-weight: 600;
-  font-size: 16px;
+  /* font-size: 16px; */
   margin-top: 180px;
   margin-left: 235px;
   text-align: center;
@@ -219,6 +219,11 @@ nav li a.ativo {
   flex-direction: column;
   width: 250px;
   color: #85c731;
+  transition: 0.3s;
+}
+
+.serv-item:hover {
+  transform: scale(1.2);
 }
 
 .serv-item figure {
@@ -229,6 +234,7 @@ nav li a.ativo {
   border-radius: 20px;
   overflow: hidden;
   margin: 0 auto;
+  margin-bottom: 1rem;
 }
 
 .serv-item p {
@@ -248,6 +254,23 @@ nav li a.ativo {
   background: chocolate;
 }
 
+.btn-all-servicos {
+  padding: 1rem 2rem;
+  text-align: center;
+  width: 20%;
+  justify-content: center;
+  margin: 3rem auto;
+  background-color: #80c51f;
+  border-radius: 20px;
+  color: #092517;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn-all-servicos:hover {
+  background: chocolate;
+}
+
 .clientes {
   text-align: center;
   background: #80c51f;
@@ -260,10 +283,20 @@ nav li a.ativo {
   padding: 4rem 0;
 }
 
-.clientes ul{
+.clientes-lista {
+  padding: 2rem;
+}
+
+.clientes-item {
+  min-width: 124px;
+}
+
+.clientes ul {
   display: flex;
-  gap: 20px;
+  flex-wrap: nowrap;
+  gap: 1rem;
   justify-content: center;
+  
 }
 
 .cliente-item {
@@ -328,6 +361,7 @@ nav li a.ativo {
   gap: 3rem;
   justify-content: center;
   padding: 3rem 0;
+  flex-wrap: wrap;
 }
 
 .contato-item i {
@@ -353,4 +387,22 @@ nav li a.ativo {
   color: #d1d1d1;
   max-width: 1200px;
   margin: 0 auto;
+}
+
+@media (max-width: 900px) {
+  .banner-container {
+    height: 268px;
+  }
+  .footer-contato {
+    flex-direction: column;
+  }
+  .sobre-content {
+    grid-template-columns: 1fr;
+  }
+  .clientes-lista {
+    overflow-x: auto;
+  }
+  .clientes ul {
+    justify-content: flex-start;
+  }
 }

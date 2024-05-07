@@ -101,7 +101,6 @@ nav li a.ativo {
 }
 
 .empresa {
-  /* background-color: red; */
   display: flex;
   gap: 2rem;
   align-items: center;
@@ -132,6 +131,7 @@ nav li a.ativo {
   display: flex;
   flex-wrap: wrap;
   margin: 5rem 0;
+  gap: 3rem;
 }
 
 .servico-foto {
@@ -143,11 +143,13 @@ nav li a.ativo {
 }
 
 .serv-item {
-  display: flex;
-  flex-direction: column;
-  width: 400px;
-  gap: 1.5rem;
-  color: #87c931;
+  width: 255px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.serv-item:hover {
+  transform: scale(1.1);
 }
 
 .serv-item figure {
