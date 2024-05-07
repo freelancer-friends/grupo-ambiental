@@ -5,7 +5,9 @@
 }
 
 body {
-  font-family: Helvetica, sans-serif;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   background-color: #f7f7f7;
 }
 
@@ -25,6 +27,11 @@ ul {
 
 p {
   font-size: 1.2rem;
+}
+
+.pmenor {
+  font-size: 12px;
+
 }
 
 .titulo {
@@ -215,4 +222,45 @@ nav li a.ativo {
   width: 350px;
 }
 
+.sobre-content {
+  margin: 0 auto;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  width: 70%;
+  margin-bottom: 50px;
+}
 
+.missaovisaovalores {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 100px;
+  margin-bottom: 60px;
+  align-items: start;
+}
+
+.missao-item,
+.visao-item,
+.valores-item {
+  text-align: left;
+  width: 250px;
+}
+
+.missao-item img,
+.visao-item img,
+.valores-item img {
+  width: 50px;
+}
+
+.missao-item h2,
+.visao-item h2,
+.valores-item h2 {
+  margin-top: 10px;
+}
+
+.pmenor {
+  font-size: 14px;
+}
