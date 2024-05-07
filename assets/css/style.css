@@ -118,7 +118,7 @@ nav li a.ativo {
   justify-content: center;
   color: white;
   /* width: 450px; */
-  padding: 1.5rem;
+  /* padding: 1.5rem; */
   height: 100%;
   text-align: center;
 }
@@ -135,7 +135,7 @@ nav li a.ativo {
   padding: 1rem 2rem;
   border-radius: 50px;
   font-weight: 600;
-  font-size: 16px;
+  /* font-size: 16px; */
   margin-top: 180px;
   margin-left: 235px;
   text-align: center;
@@ -285,6 +285,7 @@ nav li a.ativo {
   display: flex;
   gap: 20px;
   justify-content: center;
+  overflow-x: auto;
 }
 
 .cliente-item {
@@ -349,6 +350,7 @@ nav li a.ativo {
   gap: 3rem;
   justify-content: center;
   padding: 3rem 0;
+  flex-wrap: wrap;
 }
 
 .contato-item i {
@@ -374,4 +376,16 @@ nav li a.ativo {
   color: #d1d1d1;
   max-width: 1200px;
   margin: 0 auto;
+}
+
+@media (max-width: 900px) {
+  .banner-container {
+    height: 268px;
+  }
+  .footer-contato {
+    flex-direction: column;
+  }
+  .sobre-content {
+    grid-template-columns: 1fr;
+  }
 }
