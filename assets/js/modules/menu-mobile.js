@@ -6,5 +6,5 @@ export default function initMenuMobile() {
     nav.classList.toggle('active');
   }
 
-  btnMobile.addEventListener('click', toggleMenu)
+  btnMobile.addEventListener('click', toggleMenu);
 }
