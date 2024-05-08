@@ -90,8 +90,6 @@ p {
 
 .banner-bg {
   display: flex;
-  /* flex-wrap: wrap; */
-  /* text-align: center; */
   position: relative;
   height: 430px;
 }
@@ -104,7 +102,6 @@ p {
   background-position: center;
   position: absolute;
   top: 0;
-  /* width: 100%; */
   left: 0;
   bottom: 0;
   right: 0;
@@ -113,8 +110,6 @@ p {
 
 .banner-container {
   position: relative;
-  /* width: 1200px; */
-  /* height: 370px; */
   margin: 0 auto;
   text-align: left;
 }
@@ -124,8 +119,6 @@ p {
   flex-direction: column;
   justify-content: center;
   color: white;
-  /* width: 450px; */
-  /* padding: 1.5rem; */
   height: 100%;
   text-align: center;
 }
@@ -142,19 +135,18 @@ p {
   padding: 1rem 2rem;
   border-radius: 20px;
   font-weight: 600;
-  /* font-size: 16px; */
   margin-top: 180px;
-  /* margin-left: 235px; */
   text-align: center;
+  margin-left: calc(0% - 350px); /* Ajuste a margem esquerda para centrar o botão */
   transition: .3s;
   align-self: flex-start;
 }
 
-
-.banner-bg a:hover {
-  background-color: rgb(233, 225, 220);
+@media (max-width: 600px) {
+  .banner-content a {
+    margin-left: calc(0% - 40px); /* Ajuste a margem esquerda para centrar o botão em dispositivos móveis */
+  }
 }
-
 
 .sobre {
   padding: 4rem 0;
@@ -193,7 +185,6 @@ p {
 
 .sobre-content img {
   width: 100%;
-  /* height: 400px; */
 }
 
 .servicos {
@@ -262,10 +253,10 @@ p {
 }
 
 .outline-btn {
-  background: none; /* Removido o preenchimento */
-  border: 2px solid #80c51f; /* Adicionado contorno */
-  color: #80c51f; /* Cor do texto */
-  padding: 0.5rem 1rem; /* Ajuste de espaçamento interno */
+  background: none;
+  border: 2px solid #80c51f;
+  color: #80c51f;
+  padding: 0.5rem 1rem;
   cursor: pointer;
   border-radius: 15px;
   width: 300px;
@@ -274,39 +265,43 @@ p {
 }
 
 .outline-btn:hover {
-  background: #80c51f; /* Adiciona preenchimento ao passar o mouse */
-  color: white; /* Altera a cor do texto ao passar o mouse */
+  background: #80c51f;
+  color: white;
 }
 
 .clientes {
   text-align: center;
   background: #80c51f;
   color: white;
-  position: relative; /* Adicionado para posicionar as setas */
+  position: relative;
   padding: 40px;
 }
 
 .clientes-container {
-  max-width: 90%; /* Reduzindo a largura para 70% */
+  max-width: 90%;
   margin: 0 auto;
   padding: 4rem 0;
-  position: relative; /* Adicionado para posicionar as setas */
+  position: relative;
 }
-
 
 .clientes ul {
   display: flex;
   flex-wrap: nowrap;
   gap: 1rem;
-  justify-content: flex-start; /* Alterado para alinhar as logos à esquerda */
+  justify-content: flex-start;
 }
 
-.clientes-item{
+.clientes-item {
+  width: 200px;
+}
+
+.clientes-item img {
   width: 200px; 
+  height: auto; 
 }
 
 .contato {
-  background-image: url("../img/info/bannercontato.png");
+  background-image: url("../img/folhagrupoaa.png");
 }
 
 .contato-container {
@@ -412,6 +407,11 @@ p {
   .sobre-content {
     grid-template-columns: 1fr;
   }
+
+  .clientes-item img {
+    width: 400px; 
+  }
+
   .clientes-lista {
     overflow-x: auto;
   }
@@ -431,7 +431,7 @@ p {
     visibility: hidden;
     overflow-y: hidden;
   }
-  #nav.active #menu{
+  #nav.active #menu {
     height: calc(100vh - 114px);
     visibility: visible;
     overflow-y: auto;
@@ -462,7 +462,6 @@ p {
     height: 2px;
     background-color: currentColor;
     margin-top: 5px;
-    
   }
   #nav.active #hamburguer {
     transform: rotate(90deg);

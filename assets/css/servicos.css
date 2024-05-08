@@ -91,11 +91,12 @@ nav li a.ativo {
 }
 
 .servicos-container-item {
-  margin-top: 5rem;
-  margin-bottom: 5rem;
   display: flex;
-  margin: 0 auto;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 25px;
   justify-content: center;
+  align-items: center;
 }
 
 .empresa {
@@ -297,6 +298,7 @@ h2 {
 .serv-item {
   margin: 10px;
   transition: transform 0.3s ease-in-out;
+  ;
 }
 
 .serv-item:hover {
@@ -304,7 +306,7 @@ h2 {
 }
 
 .serv-item img {
-  width: 150px;
+  width: 100%;
   border-radius: 10px;
 }
 
@@ -349,6 +351,15 @@ h2 {
 
 .miniaturaserviço{
   cursor: pointer;
+}
+
+.botaoa {
+  background: #85c731;
+  color: #092517;
+  font-weight: bold;
+  padding: 1rem 2rem;
+  border-radius: 20px;
+  transition: .3s;
 }
 
 
