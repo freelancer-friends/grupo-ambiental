@@ -35,6 +35,7 @@ p {
   justify-content: center;
   text-align: center;
   margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .subtitulo {
@@ -53,16 +54,16 @@ p {
   align-items: center;
 }
 
-.logo {
-  width: 80%;
-}
-
 .header ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   list-style: none;
   gap: 1rem;
+}
+
+.logo {
+  width: 80%;
 }
 
 .nav li a {
@@ -91,40 +92,35 @@ nav li a.ativo {
 }
 
 .servicos-container-item {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
-  padding: 25px;
   justify-content: center;
   align-items: center;
+  padding: 25px;
+  margin-top: 40px;
 }
 
-.empresa {
-  /* background-color: red; */
-  display: flex;
-  gap: 2rem;
-  align-items: center;
-  margin-bottom: 2rem;
-  
+.serv-item {
+  transition: transform 0.3s ease-in-out;
 }
 
-.empresa-nome {
-  color: #092517;
-  font-size: 3rem;
+.serv-item:hover {
+  transform: scale(1.05);
 }
 
-.empresa a {
-  color: #092517;
-  background-color: #87c931;
-  display: inline-block;
-  padding: 1rem 2rem;
+.serv-item img {
+  width: 100%;
   border-radius: 10px;
-  font-weight: bold;
 }
 
-.servicos-container .titulo {
+.botaoa {
+  background: #85c731;
   color: #092517;
-  margin-bottom: 4rem;
+  font-weight: bold;
+  padding: 1rem 2rem;
+  border-radius: 20px;
+  transition: .3s;
 }
 
 .footer {
@@ -132,7 +128,6 @@ nav li a.ativo {
 }
 
 .footer-container {
-  margin-top: 100px;
   max-width: 1200px;
   margin: 0 auto;
   padding: 2rem 0;
@@ -147,18 +142,7 @@ nav li a.ativo {
   gap: 3rem;
   justify-content: center;
   padding: 3rem 0;
-}
-
-.contato-item i {
-  font-size: 2rem;
-  color: #87c931;
-}
-
-.contato-item a {
-  margin-top: 1rem;
-  color: #e5e5e5;
-  font-size: 1.2rem;
-  font-weight: bold;
+  flex-wrap: wrap;
 }
 
 .footer-copy-bg {
@@ -174,18 +158,31 @@ nav li a.ativo {
   margin: 0 auto;
 }
 
+.contato-item i {
+  font-size: 2rem;
+  color: #87c931;
+}
+
+.contato-item a {
+  margin-top: 1rem;
+  color: #e5e5e5;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+
+
 .clientes{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   padding-bottom: 65px;
-  /* width: 70%; */
 }
 
 .clienteslogo {
-  max-width: 150px; /* Defina o tamanho máximo desejado */
-  height: auto; /* Para manter a proporção da imagem */
-  margin: 10px; /* Adicione margem para separar as logos */
+  max-width: 150px;
+  height: auto;
+  margin: 10px;
 }
 
 .logoclientes {
@@ -198,15 +195,15 @@ nav li a.ativo {
 .depoimentos {
   position: relative;
   overflow: hidden;
-  max-width: 90%; /* Limita a largura do carrossel a 70% da largura da janela */
-  margin: 0 auto; /* Centraliza o carrossel na página */
+  max-width: 90%;
+  margin: 0 auto;
 }
 
 .carousel {
   display: flex;
   transition: transform 0.5s ease;
-  width: fit-content; /* Ajusta a largura do carrossel ao conteúdo */
-  margin: 0 auto; /* Centraliza o carrossel na página */
+  width: fit-content;
+  margin: 0 auto;
   margin-bottom: 100px;
 }
 
@@ -298,7 +295,6 @@ h2 {
 .serv-item {
   margin: 10px;
   transition: transform 0.3s ease-in-out;
-  ;
 }
 
 .serv-item:hover {
@@ -361,48 +357,3 @@ h2 {
   border-radius: 20px;
   transition: .3s;
 }
-
-
-
-
-
-
-
-
-
-/* .banner-container {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  display: flex;
-  justify-content: center; 
-  align-items: center; 
-}
-
-.banner {
-  display: none;
-  position: relative;
-}
-
-.banner.active {
-  display: block;
-}
-
-button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
-}
-
-#prevBtn {
-  left: 0;
-}
-
-#nextBtn {
-  right: 0;
-} */

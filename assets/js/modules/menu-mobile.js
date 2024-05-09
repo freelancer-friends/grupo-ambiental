@@ -1,11 +1,12 @@
 export default function initMenuMobile() {
   const btnMobile = document.getElementById('btn-mobile');
+  const menu = document.getElementById('menu');
 
-  if(btnMobile) {
+  if(btnMobile && menu) {
     function toggleMenu() {
-      const nav = document.querySelector('#nav');
-      nav.classList.toggle('active');
+      menu.classList.toggle('active');
     }
+
     btnMobile.addEventListener('click', toggleMenu);
   }
 }
