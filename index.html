@@ -14,39 +14,41 @@
 
   <header class="header">
     <nav class="header-nav">
-      <a href="./">
+      <a href="./index.html">
         <img class="logo" src="./assets/img/01.png" alt="Logo">
       </a>
-      <nav id="nav">
-        <button id="btn-mobile">Menu
-          <span id="hamburguer"></span>
-        </button>
-        <ul id="menu">
-          <li><a href="./" class="ativo">Início</a></li>
+      <nav data-menu="suave">
+        <ul class="nav">
+          <li><a href="./index.html">Início</a></li>
           <li><a href="./assets/pages/servicos.html">Serviços</a></li>
           <li><a href="./assets/pages/clientes.html">Clientes</a></li>
           <li><a href="./assets/pages/sobre-nos.html">Sobre nós</a></li>
           <li>
             <a href="">
-              <img src="./assets/img/info/linkedin.png" alt="linedkin">
+              <img src="./assets/img/info/linkedin.png" alt="linkedin">
             </a>
           </li>
           <li>
             <a href="https://www.instagram.com/grupoambientalrj">
-              <img src="./assets/img/info/insta.png" alt="linedkin">
+              <img src="./assets/img/info/insta.png" alt="instagram">
             </a>
           </li>
         </ul>
       </nav>
     </nav>
-  </header>
-
+  </header>  
+  
   <section class="banner-bg" id="inicio">
+
     <div class="banner-container">
-      <div class="banner-content">
-        <a href="#"><i class="fa-brands fa-whatsapp"></i>Entrar em contato</a>
-      </div>
+      <div class="banner" id="banner1"></div>
+      <div class="banner" id="banner2"></div>
+      <div class="banner" id="banner3"></div>
+      <div class="banner" id="banner4"></div>
     </div>
+    <button id="prevBtn">&lt;</button>
+    <button id="nextBtn">&gt;</button>
+
   </section>
 
   <main class="sobre" id="sobre">
@@ -66,7 +68,7 @@
         </div>
 
         <figure>
-          <img src="./assets/img/info/foto24.png" alt="imagem 2">
+          <img class="imgsobrenos" src="./assets/img/info/foto24.png" alt="imagem 2">
         </figure>
       </div>
     </div>
@@ -80,45 +82,116 @@
 
         <div class="serv-item">
           <figure>
-            <img src="./assets/img/info/serviço1.png" alt="">
+          <img class="img1" src="./assets/img/info/serviço1.png" alt="">
           </figure>
 
-          <a href="https://bit.ly/3y4d1Cp"><i class="fa-brands fa-whatsapp"></i>Falar com MSC</a>
+          <a class="botaoa" href="https://bit.ly/3y4d1Cp"><i class="fa-brands fa-whatsapp"></i>Falar com MSC</a>
         </div>
 
         <div class="serv-item">
           <figure>
             <img src="./assets/img/info/serviço2.png" alt="">
           </figure>
-          <div class="servico-foto"></div>
-          <a href="#"><i class="fa-brands fa-whatsapp"></i>Falar com MSC</a>
+
+          <a class="botaoa" href="https://bit.ly/3y4d1Cp"><i class="fa-brands fa-whatsapp"></i>Falar com MSC</a>
         </div>
 
         <div class="serv-item">
           <figure>
             <img src="./assets/img/info/serviço3.png" alt="">
           </figure>
-          <div class="servico-foto"></div>
-          <a href="#"><i class="fa-brands fa-whatsapp"></i>Falar com J.A Rio</a>
+
+          <a href="https://bit.ly/3UNUGT0"><i class="fa-brands fa-whatsapp"></i>Falar com J.A RIO</a>
         </div>
 
         <div class="serv-item">
           <figure>
             <img src="./assets/img/info/serviço4.png" alt="">
           </figure>
-          <div class="servico-foto"></div>
-          <a href="#"><i class="fa-brands fa-whatsapp"></i>Falar com J.A Rio</a>
+
+          <a href="https://bit.ly/3UNUGT0"><i class="fa-brands fa-whatsapp"></i>Falar com J.A RIO</a>
+        </div>
+
+        <div class="serv-item">
+          <figure>
+            <img src="./assets/img/info/serviço13.png" alt="">
+          </figure>
+
+          <a href="https://bit.ly/3UNUGT0"><i class="fa-brands fa-whatsapp"></i>Falar com J.A RIO</a>
+        </div>
+
+        <div class="serv-item">
+          <figure>
+            <img src="./assets/img/info/serviço6.png" alt="">
+          </figure>
+
+          <a class="botaoa" href="https://bit.ly/3y4d1Cp"><i class="fa-brands fa-whatsapp"></i>Falar com MSC</a>
+        </div>
+
+        <div class="serv-item">
+          <figure>
+            <img src="./assets/img/info/serviço7.png" alt="">
+          </figure>
+
+          <a class="botaoa" href="https://bit.ly/3y4d1Cp"><i class="fa-brands fa-whatsapp"></i>Falar com MSC</a>
+        </div>
+
+        <div class="serv-item">
+          <figure>
+            <img src="./assets/img/info/serviço8.png" alt="">
+          </figure>
+
+          <a class="botaoa" href="https://bit.ly/3y4d1Cp"><i class="fa-brands fa-whatsapp"></i>Falar com MSC</a>
+        </div>
+
+        <div class="serv-item">
+          <figure>
+            <img src="./assets/img/info/serviço9.png" alt="">
+          </figure>
+
+          <a class="botaoa" href="https://bit.ly/3y4d1Cp"><i class="fa-brands fa-whatsapp"></i>Falar com MSC</a>
+        </div>
+
+        <div class="serv-item">
+          <figure>
+            <img src="./assets/img/info/serviço10.png" alt="">
+          </figure>
+
+          <a class="botaoa" href="https://bit.ly/3y4d1Cp"><i class="fa-brands fa-whatsapp"></i>Falar com MSC</a>
+        </div>
+
+        <div class="serv-item">
+          <figure>
+            <img src="./assets/img/info/serviço11.png" alt="">
+          </figure>
+
+          <a class="botaoa" href="https://bit.ly/3y4d1Cp"><i class="fa-brands fa-whatsapp"></i>Falar com MSC</a>
+        </div>
+
+        <div class="serv-item">
+          <figure>
+            <img src="./assets/img/info/serviço12.png" alt="">
+          </figure>
+
+          <a class="botaoa" href="https://bit.ly/3y4d1Cp"><i class="fa-brands fa-whatsapp"></i>Falar com MSC</a>
+        </div>
+
+        <div class="serv-item">
+          <figure>
+            <img src="./assets/img/info/serviço5.png" alt="">
+          </figure>
+
+          <a class="botaoa" href="https://bit.ly/3y4d1Cp"><i class="fa-brands fa-whatsapp"></i>Falar com MSC</a>
         </div>
 
 
       </div>
-      <a class="outline-btn" href="./assets/pages/servicos.html">Todos os serviços</a>
     </div>
   </section>
 
   <section class="clientes">
     <div class="clientes-container">
-      <h1 class="titulo">Nossos Clientes</h1>
+      <h1 class="titulo2">Nossos Clientes</h1>
       <div class="clientes-lista">
         <ul id="clientes-carousel">
           <li class="clientes-item">
@@ -149,17 +222,15 @@
             <img src="./assets/img/info/logo9.png" alt="Logo Cliente">
           </li>
           <li class="clientes-item">
-            <img src="./assets/img/info/logo10.png" alt="Logo Cliente">
+            <img src="./assets/img/info/logooeste.png" alt="Logo Cliente">
           </li>
           <li class="clientes-item">
-            <img src="./assets/img/info/logooeste.png" alt="Logo Cliente">
+            <img src="./assets/img/info/logo11.png" alt="Logo Cliente">
           </li>
         </ul>
       </div>
     </div>
   </section>
-
-
 
   <section class="contato" id="contato">
     <div class="contato-container">

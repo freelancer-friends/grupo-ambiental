@@ -94,10 +94,12 @@ nav li a.ativo {
 .servicos-container-item {
   margin-top: 5rem;
   margin-bottom: 5rem;
+  margin-left: 2rem;
 }
 
 .empresa {
   display: flex;
+  flex-wrap: wrap;
   gap: 2rem;
   align-items: center;
   margin-bottom: 2rem;
@@ -198,18 +200,7 @@ nav li a.ativo {
   gap: 3rem;
   justify-content: center;
   padding: 3rem 0;
-}
-
-.contato-item i {
-  font-size: 2rem;
-  color: #87c931;
-}
-
-.contato-item a {
-  margin-top: 1rem;
-  color: #e5e5e5;
-  font-size: 1.2rem;
-  font-weight: bold;
+  flex-wrap: wrap;
 }
 
 .footer-copy-bg {
@@ -225,20 +216,85 @@ nav li a.ativo {
   margin: 0 auto;
 }
 
+.contato-item i {
+  font-size: 2rem;
+  color: #87c931;
+}
+
+.contato-item a {
+  margin-top: 1rem;
+  color: #e5e5e5;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+
 .globo{
   width: 350px;
 }
 
-.sobre-content {
+/* Seções */
+.sobre-container {
+  max-width: 1200px;
   margin: 0 auto;
-  margin-top: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 50px;
-  width: 70%;
-  margin-bottom: 50px;
+  padding: 2rem;
 }
+
+.sobre-content {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.missaovisaovalores {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+/* Responsividade */
+@media only screen and (max-width: 768px) {
+  .sobre-content {
+    flex-direction: column;
+  }
+
+  .paragrafo{
+    text-align: start;
+  }
+
+  .sobre-item{
+    width: 100%;
+    text-align: center;
+    gap: 100px;
+  }
+
+  .globo{
+    margin-top: 30px;
+    width: 300px;
+  }
+
+  .missaovisaovalores {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .folhagrupoa#banner1 {
+    background-image: url('../img/info/folhagrupoaaa.png');
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .missao-item,
+  .visao-item,
+  .valores-item {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
 
 .missaovisaovalores {
   display: flex;
